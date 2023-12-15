@@ -1,0 +1,482 @@
+
+html,
+body,
+header,
+#intro {
+	  scroll-behavior: smooth;
+}
+
+@font-face { font-family: Pirate; src: url('fonts/PirateScroll.otf'); } 
+@font-face { font-family: ITC; src: url('fonts/ITCAvantGardePro-Bk.otf'); } 
+
+body {
+    background-color: #faedc9;
+    background-attachment: scroll;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+}
+
+/*-----------------------------------------------NAVBAR */
+
+.navbar {
+  background-color: #6eabb9;
+  box-shadow: 0px 2px 14px 2px rgba(0, 0, 0, 0.7);
+  height: 50px;
+}
+
+.navbar-nav-ahoy {
+  overflow: hidden;
+  background-color: #6eabb9;
+  height: 50px;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.navbar-nav a {
+  float: left;
+  color: #6eabb9;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100%;
+}
+
+.navbar-nav a:hover {
+background: #6eabb9;
+}
+
+.navbar-collapse-ahoy {
+  align-items: flex-start;
+  position: relative;
+}
+.colorletraclara{
+  font-family: Pirate;
+  color: #faedc9 !important; 
+}
+.colornegro{
+  background: #6eabb9;
+  bottom: auto;
+}
+.right {
+justify-content: space-evenly;
+}
+
+.left {
+  justify-content: flex-end;
+}
+
+.nav>li{
+ position:relative;
+}  
+
+#logonav{
+   position:absolute;
+   z-index:500;
+   display:block;
+   background: url("personal/logo.png");
+   background-size: cover;
+   left: -80px;
+   width: 150px;
+   height: 82px;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #6eabb9;;
+  }    
+ 
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #6eabb9; ;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-nav:not(.top-nav-collapse) {
+    background-color: #6eabb9; ;
+  } 
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar-nav:not(.top-nav-collapse) {
+    background-color: #6eabb9; ;
+  }
+}
+
+/*-----------------------------------------------TEXTOS */
+
+.texto{
+  font-family: Pirate;
+  color: #000000;
+}
+
+.textoitc{
+  font-family: ITC;
+  color: #000000;
+}
+
+.titulo {
+  font-family: Pirate;
+  color: #000000;
+}
+
+.brtitulo{
+  margin-bottom: 30px;
+}
+.todoaizquierda {
+  margin-left: -5%;
+}
+.textoizq{
+  text-align: left;
+}
+.todoarriba {
+  margin-top: -10%;
+}
+
+.todoarribacontacto {
+margin-top: -5%;
+}
+
+.hrtitulo {
+  line-height: 1px;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+}
+.hrtitulo:before {
+    content: '';
+    background: #d63252;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 7%;
+}
+.hrtitulo:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 1.5em;
+    line-height: 1.5em;
+    color: black;
+    background-color: #faedc9;
+}
+
+.separador{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+/* -----------Texto Historia */
+
+.subtitulohistoria{
+  font-family: Pirate;
+  color: #d63252;
+  font-size: 450%;
+}
+
+.textojustify{
+  text-align: justify;
+}
+
+.textohistoria {
+  font-family: ITC;
+}
+
+.textomascara {
+  mask-image: -webkit-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+#oculto{
+  display: none;
+}
+
+.buttonleermasstyle{
+  font-family: ITC;
+  color: white;
+  background-color: #d63252;
+  border: none;
+  font-size: 180%;
+}
+
+/* -----------Personajes */
+
+.subtitulopersonajes{
+  font-family: Pirate;
+  color: #000;
+  font-size: 300%;
+  text-align: left;
+  margin-left: 5%;
+}
+
+/* -----------Texto Nuestro Juego */
+
+.textonuestrojuego1{
+  font-family: ITC;
+  font-size: 1.2vw;
+}
+
+.textonuestrojuegopos{
+  margin-left: 20%;
+}
+
+.enfasistexto1{
+  font-size: 150%;
+  font-weight:bold;
+  text-align: justify;
+}
+
+.textonuestrojuego2{
+  font-family: ITC;
+  font-size: 1.2vw;
+}
+
+/*----------------------------------------------- NUESTRO JUEGO FORMATO */
+
+.imgizq{
+  float: left;
+}
+
+.imgder{
+  float: right;
+}
+
+.ponerdebajo{
+  clear: both;
+}
+
+.alignizq{
+  text-align: right;
+}
+
+/*----------------------------------------------- MAIN SLIDER */
+
+.carousel-indicators-main li{
+  background-color: #faedc9;
+  margin: 10px;
+  padding: 2px 2px;
+  margin-top: 18px;
+}
+
+.carousel-indicators-main .active{
+  background-color: #faedc9;
+  margin: 10px;
+  padding: 10px 10px;  
+}
+
+.buttonmainslider{
+  font-family: ITC;
+  color: white;
+  background-color: #d63252;
+  border: none;
+  font-size: 2vw;
+  margin-left: -90%;
+}
+
+.carousel-main-control-prev {
+  margin-left: -5%;
+}
+
+.carousel-main-control-next {
+  margin-right: -5%;
+}
+
+
+i.fasmaincarousel {
+  color: rgb(250, 237, 201);
+  font-size: 5vw;
+
+}
+
+/*----------------------------------------------- PERSONAJES SLIDER */
+
+.carousel-indicators-personajes li{
+  background-color: #d63252;
+  margin: 10px;
+  padding: 2px 2px;
+  margin-top: 18px;
+}
+
+.carousel-indicators-personajes .active{
+  background-color: #d63252;
+  margin: 10px;
+  padding: 10px 10px; 
+}
+.carousel-indicators-personajes-cel li{
+  background-color: #d63252;
+ 
+}
+
+.carousel-indicators-personajes-cel .active{
+  background-color: #d63252;
+ 
+}
+#carousel-personajes {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.carousel-personajes-control-prev {
+  margin-left: -15%;
+}
+
+.carousel-peronajes-control-next {
+  margin-right: -15%;
+}
+
+i.fascarouselpersonajes {
+  color: rgb(214, 50, 82);
+  font-size: 4vw;
+}
+
+
+/*----------------------------------------------- EQUIPO AHOY */
+
+.imagencentrada{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.nombresequipo{
+  font-weight: bold;
+  text-align: left;
+  font-size: 100%;
+}
+
+.textoequipo{
+  text-align: left;
+  font-size: 100%;
+}
+
+/*----------------------------------------------- CONTACTO */
+
+.formcontacto{
+  background-color: #c4f4fc;
+  font-size: 100%;
+}
+
+.formcontactotextarea,
+.formcontacto input[type="text"],
+.formcontacto input[type="email"],
+.formcontacto input[type="text"]:focus,
+.formcontacto input[type="email"]:focus,
+.formcontacto textarea,
+.formcontacto textarea:focus{
+  background-color: #faedc9;
+  color: #000;
+}
+
+.imageform{
+  background-color: #d63252;
+}
+
+.imageform2{
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;  
+  margin-bottom: 10%;
+}
+
+.textoqr{
+  text-align: center;
+  color: #faedc9; 
+}
+
+.textoform{
+  text-align: center;
+}
+
+.logocontacto{
+  text-align: center;
+  color: #fff;
+  font-size: 600%;
+  margin-top: -7%;
+}
+
+.buttonenviar{
+  font-family: ITC;
+  font-size: 152%;
+  color: white;
+  background-color: #d63252;
+  border: none;
+  /* font-size: 180%; */
+}
+
+/*----------------------------------------------- BAJADA DE PÁGINA */
+
+.formatobajada{
+  background-color: #1db8c3;
+}
+
+.imagefooter{
+  width: 80%;
+}
+
+.vertical {
+  border-left: 2px solid #faedc9;
+  height: 80%;
+  position: absolute;
+  margin-left: -3px;
+}
+
+.textofooter{
+  font-family: Pirate;
+  color: #faedc9 !important;
+  font-size: 105%;
+}
+
+/*----------------------------------------------- Ajuste resoluciones menores ---------------------------------------------------- */
+
+@media screen and (max-width: 1400px) {
+
+  /*---------------- MAIN SLIDER------------- */
+  .textomainslider {
+    font-size: 2.5vw;
+  }
+
+  /*---------------- NUESTRO JUEGO IMAGENES ------------- */
+  .imgizq{
+    float: left;
+    width: 50%;
+  }
+  
+  .imgder{
+    float: right;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  /*---------------- MAIN SLIDER------------- */
+  .textomainslider {
+    font-size: 100%;
+  }
+
+  /*---------------- NUESTRO JUEGO IMAGENES ------------- */
+  .imgizq{
+    float: left;
+    width: 20%;
+  }
+  
+  .imgder{
+    float: right;
+    width: 50%; 
+  }
+}
