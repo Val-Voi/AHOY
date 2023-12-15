@@ -3,4 +3,5 @@
  
 Decidí realizar este proyecto en Laravel para aprender a utilizarlo; fue lo primero que desarrollé en este framework.
 
+Pantallazo de la página web completa:
 ![AHOY ss](https://github.com/Val-Voi/AHOY/assets/153869765/04a2e84b-cbd4-4a02-8a9a-a2f4f18d0797)
